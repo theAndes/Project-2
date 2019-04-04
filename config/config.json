@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "W0rdwall",
-    "database": "myproj2_db",
+    "password": "test",
+    "database": "coffeedb",
     "host": "localhost",
     "dialect": "mysql"
   },
