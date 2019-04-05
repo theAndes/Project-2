@@ -20,6 +20,7 @@ function queryApi(position) {
     url: url,
     type: "GET"
   }).then(function(response) {
+      console.log(response)
     var summary = response.daily.data[0].summary;
     var highTemp = Math.round(response.daily.data[0].apparentTemperatureHigh);
     var lowTemp = Math.round(response.daily.data[0].apparentTemperatureLow);
