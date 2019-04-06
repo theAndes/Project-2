@@ -6,7 +6,11 @@ var db = require("./models");
 
 var app = express();
 <<<<<<< HEAD
+<<<<<<< HEAD
 var PORT = process.env.PORT || 3030;
+=======
+var PORT = process.env.PORT || 3322;
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
 =======
 var PORT = process.env.PORT || 3322;
 >>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25

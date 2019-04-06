@@ -1,5 +1,6 @@
 function getWeather() {
 <<<<<<< HEAD
+<<<<<<< HEAD
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(queryApi);
   } else {
@@ -40,6 +41,8 @@ function queryApi(position) {
   });
 }
 =======
+=======
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(queryApi);
     } else {
@@ -84,5 +87,8 @@ function queryApi(position) {
 $("#test").on("click", function() {
     getWeather();
 });
+<<<<<<< HEAD
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
+=======
 >>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
 getWeather();

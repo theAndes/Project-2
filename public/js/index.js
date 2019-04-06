@@ -135,6 +135,7 @@ var refreshExamples = function() {
                     "data-id": example.id
                 })
                 .append($a);
+<<<<<<< HEAD
 
             var $button = $("<button>")
                 .addClass("btn btn-danger float-right delete")
@@ -145,6 +146,18 @@ var refreshExamples = function() {
             return $li;
         });
 
+=======
+
+            var $button = $("<button>")
+                .addClass("btn btn-danger float-right delete")
+                .text("ｘ");
+
+            $li.append($button);
+
+            return $li;
+        });
+
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
         $exampleList.empty();
         $exampleList.append($examples);
     });

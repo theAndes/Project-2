@@ -3,13 +3,19 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    /* !-- Coffee Color palette:
     #241508 #3a2306 #5e4423 #8d7147 #c19d67 -- */
 =======
+=======
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
  /* Coffee Color palette: */
 /* #241508 #3a2306 #5e4423 #8d7147 #c19d67  */
 
 
+<<<<<<< HEAD
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
+=======
 >>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
 
 body {
@@ -17,6 +23,10 @@ background-color: #3a2306;
 color: #241508;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
 =======
 
 >>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
@@ -24,6 +34,7 @@ color: #241508;
 background-color: #241508;
 color: #c19d67;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 a {
 color: #c19d67;
@@ -42,6 +53,8 @@ border-width: 2px;
 border-color: #241508;
 }
 =======
+=======
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
 
 a {
 color: #c19d67;
@@ -64,11 +77,15 @@ border-width: 2px;
 border-color: #241508;
 }
 
+<<<<<<< HEAD
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
+=======
 >>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
 #title {
 font-size: 6vw;
 color: #8d7147;
 font-family: 'Vast Shadow', cursive;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 #pot-pic{
@@ -76,11 +93,17 @@ width: 4.5vw;
 margin: 0 0 30px 20px;
 }
 =======
+=======
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
 
 }
 
 #pot-pic {
 width: 4.5vw;
 margin: 0 0 30px 20px;
+<<<<<<< HEAD
+}
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
+=======
 }
 >>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25

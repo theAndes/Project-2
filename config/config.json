@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "development": {
     "username": "root",
     "password": "W0rdwall",
@@ -21,6 +22,8 @@
   }
 }
 =======
+=======
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
     "development": {
         "username": "root",
         "password": "root",
@@ -42,5 +45,9 @@
         "use_env_variable": "JAWSDB_URL",
         "dialect": "mysql"
     }
+<<<<<<< HEAD
+}
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
+=======
 }
 >>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
