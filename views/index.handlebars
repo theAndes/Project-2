@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
         <h1>{{msg}}</h1>
         <h2>This is our Home Page!</h2>
@@ -22,16 +23,197 @@
             <button class="btn btn-danger float-right delete">ｘ</button>
           </li>
           {{/each}}
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Vast+Shadow"
+    rel="stylesheet">
+  <title>Document</title>
+  <style>
+    {
+        {
+         !-- Coffee Color palette:
+          #241508 #3a2306 #5e4423 #8d7147 #c19d67 --
+      }
+    }
+
+    body {
+      background-color: #3a2306;
+      color: #241508;
+    }
+
+    .navbar {
+      background-color: #241508;
+      color: #c19d67;
+    }
+
+    a {
+      color: #c19d67;
+    }
+
+    a:hover {
+      color: #5e4423;
+    }
+
+    .card {
+      color: #241508;
+    }
+    .card-title{
+     font-family: 'Josefin Slab', serif;
+    }
+    hr{
+      border-width: 2px;
+      border-color: #241508;
+    }
+
+    #title {
+      font-size: 6vw;
+      color: #8d7147;
+font-family: 'Vast Shadow', cursive;
+
+    }
+    #pot-pic{
+      width: 4.5vw;
+      margin: 0 0 30px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg  ">
+    <a class="navbar-brand" href="#"><i class="fas fa-coffee"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active mr-0">
+          <a class="nav-link" href="#">Morning Coffee<span class="sr-only">(current)</span></a>
+        </li>
+
+      </ul>
+      <div class="my-2 my-lg-0">
+        <ul class="navbar-nav mr-auto">
+          <li><a href="#" class="nav-link mr-4" id="sign-up">sign up</a></li>
+          <li><a href="#" class="nav-link mr-1" id="login">login</a></li>
+>>>>>>> fdd8b196613ab99ff138bbba2304e09013568e6c
         </ul>
+      </div>
+      {{!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> --}}
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="text-center" id="title">Morning Coffee<img id="pot-pic" src="/images/coffee_pot.png"></div>
+  </div>
+
+  <div class="container col-sm-12 mt-5 text-center">
+    <div class="row justify-content-center">
+      <div class="card col-lg-3 mr-1">
+
+        <div class="card-body">
+          <h1 class="card-title">Weather</h1>
+          <hr>
+          <div id="demo" style="font-size: 20px;"></div>
+        </div>
+      </div>
+      <div class="card col-lg-3 mr-1">
+
+        <div class="card-body">
+          <h1 class="card-title">Commute</h1>
+          <hr>
+          <div id="commute" style="font-size: 20px;">grab from api</div>
+        </div>
+      </div>
+      <div class="card col-lg-3 mr-1">
+
+        <div class="card-body">
+          <h1 class="card-title">Todo List</h1>
+          <hr>
+          <div id="todos" style="font-size: 20px;">Grab from database</div>
+          <form class="form-inline">
+            <div class="form-group mx-sm-3 mb-2">
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Enter Todo">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Add Todo</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div class="card col-sm-9">
+        <div class="card-body">
+          <h1 class="card-title">News</h1>
+          <hr>
+          <div id="news" style="font-size: 20px;">Grab from Api</div>
+        </div>
       </div>
     </div>
   </div>
+<<<<<<< HEAD
   <center><button id="test">test</button>
     <div id="demo" style="font-size: 30px;"></div>
   </center>
+=======
+  {{!-- <div id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 offset-2">
+          <h1>{{msg}}</h1>
+          <h2>This is our Home Page!</h2>
+          <form class="clearfix mb-4" action="POST">
+            <div class="form-group">
+              <label for="example-text">Example Text</label>
+              <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+                placeholder="Enter Example Text">
+            </div>
+            <div class="form-group">
+              <label for="example-description">Example Description</label>
+              <textarea class="form-control" id="example-description" aria-describedby="example-description"
+                placeholder="Enter Example Description"></textarea>
+            </div>
+            <button id="submit" class="btn btn-primary float-right">Submit</button>
+          </form>
+          <h3>Examples:</h3>
+          <ul id="example-list" class="list-group">
+            {{#each examples}}
+            <li data-id="{{this.id}}" class="list-group-item">
+              <a href="example/{{this.id}}">{{this.text}}</a>
+              <button class="btn btn-danger float-right delete">ｘ</button>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+    
 
-</div>
+  </div> --}}
+>>>>>>> fdd8b196613ab99ff138bbba2304e09013568e6c
 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/weatherapi.js"></script>
+</body>
+
+<<<<<<< HEAD
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script src="/js/weatherapi.js"></script>
+=======
+</html>
+>>>>>>> fdd8b196613ab99ff138bbba2304e09013568e6c
