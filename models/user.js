@@ -1,4 +1,4 @@
-const crypto = require('crypto');
+var crypto = require('crypto');
 
 module.exports = function(sequelize, DataTypes) {
     var User = sequelize.define("User", {
