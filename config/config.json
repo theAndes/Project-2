@@ -1,4 +1,29 @@
 {
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "development": {
+    "username": "root",
+    "password": "W0rdwall",
+    "database": "myproj2_db",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "testdb",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}
+=======
+=======
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
     "development": {
         "username": "root",
         "password": "test",
@@ -20,4 +45,9 @@
         "use_env_variable": "JAWSDB_URL",
         "dialect": "mysql"
     }
+<<<<<<< HEAD
 }
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
+=======
+}
+>>>>>>> c317214b595fa1d214821eeb6b1a985f9b919b25
