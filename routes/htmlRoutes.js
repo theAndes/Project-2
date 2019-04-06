@@ -3,6 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
   app.get("/", function(req, res) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     console.log("db.example: ", db.Example);
     res.render("login");
   });
@@ -16,6 +17,10 @@ module.exports = function(app) {
     });
   });
 
+=======
+    res.render("index");
+  });
+>>>>>>> fdd8b196613ab99ff138bbba2304e09013568e6c
 =======
     res.render("index");
   });

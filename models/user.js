@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 var crypto = require('crypto');
+=======
+const crypto = require('crypto');
+>>>>>>> fdd8b196613ab99ff138bbba2304e09013568e6c
 
 module.exports = function(sequelize, DataTypes) {
     var User = sequelize.define("User", {
