@@ -1,5 +1,5 @@
 var authController = require("../controller/authController.js");
-
+console.log(authController.signup);
 module.exports = function(app, passport) {
     console.log("In the auth.js. Right before the signup route");
 
@@ -19,6 +19,7 @@ module.exports = function(app, passport) {
     app.get("/dashboard", isLoggedIn, authController.dashboard);
 
     app.get("/logout", authController.logout);
+    console.log("In the auth.js. --->");
 
     app.post(
         "/signin",
