@@ -23,6 +23,14 @@ module.exports = function(sequelize, DataTypes) {
                 notNull: true,
                 len: [8]
             }
+        },
+        lastLogin: {
+            type: DataTypes.DATE
+        },
+
+        status: {
+            type: DataTypes.ENUM("active", "inactive"),
+            defaultValue: "active"
         }
     });
 
