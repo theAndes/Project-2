@@ -40,6 +40,8 @@ app.engine(
 app.set("view engine", "handlebars");
 
 // Routes
+//load passport strategies
+require("./passport/passport.js")(passport, models.user);
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
