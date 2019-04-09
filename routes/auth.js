@@ -1,6 +1,8 @@
 var authController = require("../controller/authController.js");
 
 module.exports = function(app, passport) {
+    console.log("In the auth.js. Right before the signup route");
+
     app.get("/signup", authController.signup);
 
     app.get("/signin", authController.signin);
