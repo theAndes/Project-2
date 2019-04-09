@@ -1,16 +1,16 @@
 var db = require("../models");
-var authController = require("../controller/authController.js");
-module.exports = function(app, passport) {
-    app.get("/signup", authController.signup);
-    app.get("/signin", authController.signin);
-    app.post(
-        "/signup",
-        passport.authenticate("local-signup", {
-            successRedirect: "/dashboard",
+// var authController = require("../controller/authController.js");
+module.exports = function(app) {
+    // app.get("/signup", authController.signup);
+    // app.get("/signin", authController.signin);
+    // app.post(
+    //     "/signup",
+    //     passport.authenticate("local-signup", {
+    //         successRedirect: "/dashboard",
 
-            failureRedirect: "/signup"
-        })
-    );
+    //         failureRedirect: "/signup"
+    //     })
+    // );
 
     app.get("/", function(req, res) {
         res.render("index");

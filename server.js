@@ -41,6 +41,7 @@ app.set("view engine", "handlebars");
 
 // Routes
 //load passport strategies
+var authRoute = require("./routes/auth.js")(app);
 require("./passport/passport.js")(passport, models.user);
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
