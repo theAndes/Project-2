@@ -1,7 +1,10 @@
-function getNews() {
+function getNews(category) {
+    $("#news").html("");
     var myKey = "e657221f63554ff492e2c70e8ecb8c86";
     var queryUrl =
-        "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=us&apiKey=" +
+        "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=us&category=" +
+        category +
+        "&apiKey=" +
         myKey;
     $.ajax({
         url: queryUrl,
@@ -12,7 +15,9 @@ function getNews() {
         for (var i = 0; i < response.articles.length; i++) {
             if (response.articles[i].content) {
                 $("#news").append(
-                    "<h3>" +
+                    "<img src=" +
+                        response.articles[i].urlToImage +
+                        "><h3>" +
                         response.articles[i].title +
                         "</h3><p>" +
                         response.articles[i].description +
@@ -24,4 +29,9 @@ function getNews() {
         }
     });
 }
-getNews();
+//when user clicks on category, pass category name from the id attribute to getNews()
+$(".category").on("click", function() {
+    console.log("THIS: ", this);
+    var category = this.id;
+    getNews(category);
+});
