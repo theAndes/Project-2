@@ -48,3 +48,11 @@ margin: 0 0 30px 20px;
 width: 4.5vw;
 margin: 0 0 30px 20px;
 }
+#news{
+  text-align: left;
+}
+#add-todo-btn{
+  background-color: #8d7147;
+  color: black;
+  border: none;
+}
