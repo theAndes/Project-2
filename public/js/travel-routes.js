@@ -1,4 +1,5 @@
 $("#addressSubmit").on("click", function() {
+    event.preventDefault();
     var address1 = $("#address1")
         .val()
         .trim();
