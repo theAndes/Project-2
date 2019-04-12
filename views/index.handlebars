@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active mr-0">
-                <a class="nav-link" href="#">Morning Coffee<span class="sr-only">(current)</span></a>
+                <span class="sr-only">(current)</span>
             </li>
 
         </ul>
@@ -60,9 +60,9 @@
                 <div id="todos" style="font-size: 20px;">Grab from database</div>
                 <form class="form-inline">
                     <div class="form-group mx-sm-3 mb-2">
-                        <input type="password" class="form-control" id="inputPassword2" placeholder="Enter Todo">
+                        <input type="password" class="form-control" id="add-todo-input" placeholder="Enter Todo">
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2">Add Todo</button>
+                    <button type="submit" class="btn btn-primary mb-2" id="add-todo-btn">Add Todo</button>
                 </form>
             </div>
         </div>
@@ -72,7 +72,16 @@
             <div class="card-body">
                 <h1 class="card-title">News</h1>
                 <hr>
-                <div id="news" style="font-size: 20px;">Grab from Api</div>
+                <ul>
+                    <a href="#"><li class="category" id="sports">Sports</li></a>
+                    <a href="#"><li class="category"  id="politics">Politics</li></a>
+                    <a href="#"><li class="category"  id="technology">Technology</li></a>  
+                    <a href="#"><li class="category"  id="science">Science</li></a>   
+                    <a href="#"><li class="category"  id="entertainment">Entertainment</li></a>
+                    <a href="#"><li class="category"  id="business">Business</li></a>
+
+                </ul>
+                <div id="news" style="font-size: 20px;"></div>
             </div>
         </div>
     </div>
@@ -81,3 +90,4 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script src="/js/weatherapi.js"></script>
+<script src="/js/newsapi.js"></script>

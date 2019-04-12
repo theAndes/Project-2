@@ -27,7 +27,21 @@ color: #241508;
 .card-title{
 font-family: 'Josefin Slab', serif;
 }
-
+.card-body li{
+  display: inline;
+  padding-right: 20px;
+}
+.card-body a{
+color: #241508; 
+}
+.card-body a:hover{
+  text-decoration: none;
+  color: #aa7305;
+  }
+  .card-body a:focus{
+    text-decoration: none;
+    color: #aa7305;
+    }
 hr{
 border-width: 2px;
 border-color: #241508;
@@ -48,3 +62,12 @@ margin: 0 0 30px 20px;
 width: 4.5vw;
 margin: 0 0 30px 20px;
 }
+#news{
+  text-align: left;
+}
+#add-todo-btn{
+  background-color: #8d7147;
+  color: black;
+  border: none;
+}
+img{width: 250px;}
