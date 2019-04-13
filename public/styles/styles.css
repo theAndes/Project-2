@@ -1,3 +1,7 @@
+body{
+    font-family: 'Merriweather', serif;
+
+}
 .list-group-item {
     line-height: 2.5;
 }
@@ -87,3 +91,29 @@ img{
     text-align: left;
     margin-top: 20px;
 }
+
+#mc-title{
+    font-size: 3rem;
+  
+  }
+  
+  #bg-image{
+    background-image: url("../images/bg-image.jpg");
+    background-size: cover;
+    min-height: 100vh;
+  }
+  .container.signin {
+      min-width: 450px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+  }
+  @media only screen and (max-width: 700px) {
+    #pot-pic {display: none;}
+    .form-group{font-size: 2rem;}
+    .container.rounded.signin.top40.py-5.bg-light.col-lg-8.col-10 {
+        top: 50%;
+    }
+
+  }
