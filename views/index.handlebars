@@ -14,8 +14,8 @@
         </ul>
         <div class="my-2 my-lg-0">
             <ul class="navbar-nav mr-auto">
-                <li><a href="#" class="nav-link mr-4" id="sign-up">sign up</a></li>
-                <li><a href="#" class="nav-link mr-1" id="login">login</a></li>
+                <li><a href="/signup" class="nav-link mr-4" id="sign-up">sign up</a></li>
+                <li><a href="/signin" class="nav-link mr-1" id="login">login</a></li>
             </ul>
         </div>
     </div>
@@ -55,18 +55,32 @@
         <div class="card col-lg-3 mr-1">
 
             <div class="card-body">
-                <h1 class="card-title">Todo List</h1>
-                <hr>
-                <div id="todos" style="font-size: 20px;">Grab from database</div>
-                <form class="form-inline">
-                    <div class="form-group mx-sm-3 mb-2">
-                        <input type="password" class="form-control" id="add-todo-input" placeholder="Enter Todo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <ul class="list-group todo-list">
+                                <li class="list-group-item new-item">
+                                    <form id="todo-form">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-10">
+                                                    <input class="new-item form-control" placeholder="Add a todo" type="text" />
+                                                </div>
+                                                <div class="col-2">
+                                                    <button type="submit" class="btn btn-success">Add Todo</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </li>
+                            <span class="todo-container">
+                            </span>
+                            </ul>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2" id="add-todo-btn">Add Todo</button>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
     <div class="row justify-content-center mt-3">
         <div class="card col-sm-9">
             <div class="card-body">

@@ -1,30 +1,43 @@
 module.exports = function(sequelize, DataTypes) {
-    var User = sequelize.define("User", {
-        id: {
-            primaryKey: true,
-            type: DataTypes.INTEGER,
-            autoIncrement: true
-        },
-        name: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        email: {
-            type: DataTypes.STRING,
-            validate: {
-                isEmail: true,
-                notNull: true
-            }
-        },
+    var User = sequelize.define(
+        "user",
+        {
+            id: {
+                primaryKey: true,
+                type: DataTypes.INTEGER,
+                autoIncrement: true
+            },
+            name: {
+                type: DataTypes.STRING,
+                notEmpty: true
+            },
+            email: {
+                type: DataTypes.STRING,
+                validate: {
+                    isEmail: true
+                }
+            },
 
-        password: {
-            type: DataTypes.STRING,
-            validate: {
-                notNull: true,
-                len: [8]
+            password: {
+                type: DataTypes.STRING,
+                allowNull: false,
+                validate: {
+                    len: [8]
+                }
+            },
+
+            // eslint-disable-next-line camelcase
+            last_login: {
+                type: DataTypes.DATE
+            },
+
+            status: {
+                type: DataTypes.ENUM("active", "inactive"),
+                defaultValue: "active"
             }
-        }
-    });
+        },
+        { timestamps: false }
+    );
 
     User.associate = function(models) {
         User.hasMany(models.Todo, {
