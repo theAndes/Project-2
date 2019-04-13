@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg  ">
-    <a class="navbar-brand" href="#"><i class="fas fa-coffee"></i></a>
+    <a class="navbar-brand" href="#"><i class="fa fa-coffee"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,23 +35,43 @@
                 <div id="demo" style="font-size: 20px;"></div>
             </div>
         </div>
-        <div class="card col-lg-3 mr-1">
 
-            {{!-- TRAVEL --}}
-            <div class="card-body">
+
+        {{!-- TRAVEL --}}
+        <div class="card col-lg-3 mr-1">
+            <div class="card-body" id="address-form">
                 <h1 class="card-title">Commute</h1>
                 <hr>
-                <div id="commute" style="font-size: 20px;">
-                    <form>
-                        <input class="float-left" type="text" id="address1" name="address"
-                            placeholder="Starting Point..">
-                        <input class="float-left" type="text" id="address2" name="address" placeholder="Destination..">
+                <div style="text-align: left">
+                    <div class="input-group mb-3" id="add1-input-group">
+                        <input id="address1" type="text" class="form-control" placeholder="Starting address">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" id="current-location" type="button"
+                                style="background-color:#8d7147">
+                                <i class="fa fa-map-marker"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="add1-validation"
+                        style="text-align: left; color: #de751f; margin-bottom: 20px; display: none">Please enter a
+                        starting address.</div>
 
-                        <button type="submit" id="addressSubmit" value="Submit">SUBMIT</button>
-                    </form>
+                    <div class="input-group mb-3" id="add2-input-group">
+                        <input id="address2" type="text" class="form-control" placeholder="Destination address"
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div id="add2-validation"
+                        style="text-align: left; color: #de751f; margin-bottom: 15px; display: none">Please enter a
+                        destination address.</div>
+
+                    <button id="addressSubmit" class="btn btn-secondary" type="button"
+                        style="background-color:#8d7147; color:black;">SUBMIT</button>
+
+                    <div id="traffic"></div>
                 </div>
             </div>
         </div>
+
         <div class="card col-lg-3 mr-1">
 
             <div class="card-body">

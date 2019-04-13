@@ -1,31 +1,31 @@
 .list-group-item {
-  line-height: 2.5;
+    line-height: 2.5;
 }
 
 body {
-background-color: #3a2306;
-color: #241508;
+    background-color: #3a2306;
+    color: #241508;
 }
 
 .navbar {
-background-color: #241508;
-color: #c19d67;
+    background-color: #241508;
+    color: #c19d67;
 }
 
 a {
-color: #c19d67;
+    color: #c19d67;
 }
 
 a:hover {
-color: #5e4423;
+    color: #5e4423;
 }
 
 .card {
-color: #241508;
+    color: #241508;
 }
 
-.card-title{
-font-family: 'Josefin Slab', serif;
+.card-title {
+    font-family: 'Josefin Slab', serif;
 }
 .card-body li{
   display: inline;
@@ -48,26 +48,42 @@ border-color: #241508;
 }
 
 #title {
-font-size: 6vw;
-color: #8d7147;
-font-family: 'Vast Shadow', cursive;
-}
-
-#pot-pic{
-width: 4.5vw;
-margin: 0 0 30px 20px;
+    font-size: 6vw;
+    color: #8d7147;
+    font-family: 'Vast Shadow', cursive;
 }
 
 #pot-pic {
-width: 4.5vw;
-margin: 0 0 30px 20px;
+    width: 4.5vw;
+    margin: 0 0 30px 20px;
 }
-#news{
-  text-align: left;
+
+#pot-pic {
+    width: 4.5vw;
+    margin: 0 0 30px 20px;
 }
+
+#news {
+    text-align: left;
+}
+
+#add-todo-btn {
+    background-color: #8d7147;
+    color: black;
+    border: none;
+}
+
 #add-todo-btn{
   background-color: #8d7147;
   color: black;
   border: none;
 }
-img{width: 250px;}
+
+img{
+    width: 250px;
+}
+
+#traffic {
+    text-align: left;
+    margin-top: 20px;
+}
