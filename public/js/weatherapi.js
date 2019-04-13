@@ -10,15 +10,11 @@ function queryApi(position) {
     var long = position.coords.longitude;
     coordinates = lat + "," + long;
     // eslint-disable-next-line prettier/prettier
-    var queryUrl = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/c862563a11d6e79b149ee1ac7e419121/" + lat + "," + long;
+    var queryUrl = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/b303671769b2b1c088768ac04dd1b7a7/" + lat + "," + long;
     $.ajax({
         url: queryUrl,
         type: "GET"
-<<<<<<< Updated upstream
-    }).then(function(response) {
-=======
     }).then(function (response) {
->>>>>>> Stashed changes
         var summary = response.daily.data[0].summary;
         var highTemp = Math.round(
             response.daily.data[0].apparentTemperatureHigh
@@ -46,8 +42,6 @@ function queryApi(position) {
             precipProb
         );
     });
-<<<<<<< Updated upstream
-=======
 
     let MQ_KEY = "6KiSyVT6eCBOACnPMSNKOBf9BsMiWRaA";
     $.ajax({
@@ -58,7 +52,6 @@ function queryApi(position) {
         console.log(response);
         currentLocation = response.results[0].locations[0].street + ", " + response.results[0].locations[0].adminArea5 + ", " + response.results[0].locations[0].adminArea3
     });
->>>>>>> Stashed changes
 }
 
 getWeather();

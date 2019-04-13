@@ -81,19 +81,21 @@ $("#addressSubmit").on("click", function () {
                         response.routes[0].summary
                             .liveTrafficIncidentsTravelTimeInSeconds;
                     var secDur = moment.duration(travelTimeSecs, "seconds");
-                    var formTravelTime =
+                     var formTravelTime =
                         travelTimeSecs > 3600
                             ? secDur.format("h:mm") + " h"
                             : Math.floor(secDur.asMinutes()) + " mins";
                     console.log(formTravelTime);
-
                     var directionsURL = "https://www.google.com/maps/dir/?api=1&origin=" + address1Encoded + "&destination=" + address2Encoded;
                     console.log(directionsURL);
+                    $("#traffic").html("<div id='traffic'>Current travel time to your destination is: <span style='color: #de751f'><h3 style='font-weight: bold'>" + formTravelTime + "</h3></span></div><button id='directions-link' class='btn btn-secondary' type='button' style='background-color:#8d7147'><a target='_blank' style='color:black' href='" + directionsURL + "'>GET DIRECTIONS</a></button>")
                 });
             });
         });
     }
 });
+
+
 
 $("#address1").autocomplete({
     source: fullAC,
