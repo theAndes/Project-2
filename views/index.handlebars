@@ -14,8 +14,7 @@
         </ul>
         <div class="my-2 my-lg-0">
             <ul class="navbar-nav mr-auto">
-                <li><a href="#" class="nav-link mr-4" id="sign-up">sign up</a></li>
-                <li><a href="#" class="nav-link mr-1" id="login">login</a></li>
+                <li><a href="/logout" class="nav-link mr-1" id="logout">Logout</a></li>
             </ul>
         </div>
     </div>
@@ -39,7 +38,11 @@
 
         {{!-- TRAVEL --}}
         <div class="card col-lg-3 mr-1">
+<<<<<<< Updated upstream
             <div class="card-body" id="address-form">
+=======
+            <div class="card-body">
+>>>>>>> Stashed changes
                 <h1 class="card-title">Commute</h1>
                 <hr>
                 <div style="text-align: left">
@@ -55,6 +58,7 @@
                     <div id="add1-validation"
                         style="text-align: left; color: #de751f; margin-bottom: 20px; display: none">Please enter a
                         starting address.</div>
+<<<<<<< Updated upstream
 
                     <div class="input-group mb-3" id="add2-input-group">
                         <input id="address2" type="text" class="form-control" placeholder="Destination address"
@@ -71,34 +75,86 @@
                 </div>
             </div>
         </div>
+=======
+
+                    <div class="input-group mb-3" id="add2-input-group">
+                        <input id="address2" type="text" class="form-control" placeholder="Destination address"
+                            aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div id="add2-validation"
+                        style="text-align: left; color: #de751f; margin-bottom: 15px; display: none">Please enter a
+                        destination address.</div>
+
+                    <button id="addressSubmit" class="btn btn-secondary" type="button"
+                        style="background-color:#8d7147; color:black;">SUBMIT</button>
+                </div>
+            </div>
+        </div>
 
         <div class="card col-lg-3 mr-1">
+>>>>>>> Stashed changes
 
+        <div class="card col-lg-3 mr-1">
             <div class="card-body">
-                <h1 class="card-title">Todo List</h1>
+                <h1 class="card-title">ToDo's</h1>
                 <hr>
+<<<<<<< Updated upstream
+                <form>
+                    <div class="form-row">
+                        <div class="col-auto">
+                            <input style="text-align:left" class="new-item form-control" placeholder="Add a todo"
+                                type="text" />
+                        </div>
+                        <div class="col-auto">
+                            <button id="add-todo-button" type="submit" class="btn btn-secondary"
+                                style="background-color:#8d7147; color:black;">ADD TODO</button>
+                        </div>
+=======
                 <div id="todos" style="font-size: 20px;">Grab from database</div>
                 <form class="form-inline">
                     <div class="form-group mx-sm-3 mb-2">
                         <input type="text" class="form-control" id="add-todo-input" placeholder="Enter Todo">
+>>>>>>> Stashed changes
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2" id="add-todo-btn">Add Todo</button>
                 </form>
+
+                <div class="container" style="width:100%">
+                        <div class="row" style="width:100%">
+                            <div class="col-12" style="text-align: left">
+                                <ul class="list-group todo-list" style="margin-top:20px; text-align:left">
+                                    <span class="todo-container"></span>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
+
     <div class="row justify-content-center mt-3">
         <div class="card col-sm-9">
             <div class="card-body">
                 <h1 class="card-title">News</h1>
                 <hr>
                 <ul>
-                    <a href="#"><li class="category" id="sports">Sports</li></a>
-                    <a href="#"><li class="category"  id="politics">Politics</li></a>
-                    <a href="#"><li class="category"  id="technology">Technology</li></a>  
-                    <a href="#"><li class="category"  id="science">Science</li></a>   
-                    <a href="#"><li class="category"  id="entertainment">Entertainment</li></a>
-                    <a href="#"><li class="category"  id="business">Business</li></a>
+                    <a href="#">
+                        <li class="category" id="sports">Sports</li>
+                    </a>
+                    <a href="#">
+                        <li class="category" id="politics">Politics</li>
+                    </a>
+                    <a href="#">
+                        <li class="category" id="technology">Technology</li>
+                    </a>
+                    <a href="#">
+                        <li class="category" id="science">Science</li>
+                    </a>
+                    <a href="#">
+                        <li class="category" id="entertainment">Entertainment</li>
+                    </a>
+                    <a href="#">
+                        <li class="category" id="business">Business</li>
+                    </a>
 
                 </ul>
                 <div id="news" style="font-size: 20px;"></div>

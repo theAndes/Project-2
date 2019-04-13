@@ -27,6 +27,7 @@ a:hover {
 .card-title {
     font-family: 'Josefin Slab', serif;
 }
+<<<<<<< Updated upstream
 .card-body li{
   display: inline;
   padding-right: 20px;
@@ -45,6 +46,31 @@ color: #241508;
 hr{
 border-width: 2px;
 border-color: #241508;
+=======
+
+.card-body li {
+    display: inline;
+    padding-right: 20px;
+}
+
+.card-body a {
+    color: #241508;
+}
+
+.card-body a:hover {
+    text-decoration: none;
+    color: #aa7305;
+}
+
+.card-body a:focus {
+    text-decoration: none;
+    color: #aa7305;
+}
+
+hr {
+    border-width: 2px;
+    border-color: #241508;
+>>>>>>> Stashed changes
 }
 
 #title {
@@ -61,18 +87,28 @@ border-color: #241508;
 #pot-pic {
     width: 4.5vw;
     margin: 0 0 30px 20px;
+<<<<<<< Updated upstream
 }
 
 #news {
     text-align: left;
 }
 
+=======
+}
+
+#news {
+    text-align: left;
+}
+
+>>>>>>> Stashed changes
 #add-todo-btn {
     background-color: #8d7147;
     color: black;
     border: none;
 }
 
+<<<<<<< Updated upstream
 #add-todo-btn{
   background-color: #8d7147;
   color: black;
@@ -87,3 +123,8 @@ img{
     text-align: left;
     margin-top: 20px;
 }
+=======
+img {
+    width: 250px;
+}
+>>>>>>> Stashed changes
