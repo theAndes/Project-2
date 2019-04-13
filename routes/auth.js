@@ -1,9 +1,7 @@
-var authController = require('../controllers/authcontroller.js');
- 
-module.exports = function(app) {
- 
-    app.get('/signup', authController.signup);
+var authController = require("../controllers/authcontroller.js");
 
-    app.get('/signin', authController.signin);
- 
-}
+module.exports = function(app) {
+    app.get("/signup", authController.signup);
+
+    app.get("/signin", authController.signin);
+};
