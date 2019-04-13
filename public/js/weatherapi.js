@@ -10,11 +10,7 @@ function queryApi(position) {
     var long = position.coords.longitude;
     coordinates = lat + "," + long;
     // eslint-disable-next-line prettier/prettier
-<<<<<<< Updated upstream
     var queryUrl = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/b303671769b2b1c088768ac04dd1b7a7/" + lat + "," + long;
-=======
-    var queryUrl = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/c862563a11d6e79b149ee1ac7e419121/" + lat + "," + long;
->>>>>>> Stashed changes
     $.ajax({
         url: queryUrl,
         type: "GET"

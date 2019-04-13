@@ -8,7 +8,7 @@ var bodyParser = require("body-parser");
 var db = require("./models");
 
 var app = express();
-var PORT = process.env.PORT || 3036;
+var PORT = process.env.PORT || 3035;
 
 // Middleware
 // For BodyParser ------------
