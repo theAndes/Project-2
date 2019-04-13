@@ -32,7 +32,7 @@ app.engine(
 app.set("view engine", "handlebars");
 
 // Routes
-require("./routes/apiRoutes")(app);
+require("./routes/apiRoutes")(app, passport);
 require("./routes/htmlRoutes")(app, passport);
 
 // var authRoute = require("./routes/auth.js")(app);

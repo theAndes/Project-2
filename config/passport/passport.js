@@ -3,6 +3,7 @@ var bCrypt = require("bcrypt-nodejs");
 
 module.exports = function(passport, user) {
     var User = user;
+    // console.log(user.id);
 
     var LocalStrategy = require("passport-local").Strategy;
 
@@ -63,6 +64,10 @@ module.exports = function(passport, user) {
 
     //serialize
     passport.serializeUser(function(user, done) {
+        var userid = user.id;
+        //console.log(userid);
+        module.exports.userid = userid;
+
         done(null, user.id);
     });
 

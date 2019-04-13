@@ -26,6 +26,7 @@ module.exports = function(sequelize, DataTypes) {
                 }
             },
 
+            // eslint-disable-next-line camelcase
             last_login: {
                 type: DataTypes.DATE
             },
@@ -38,10 +39,10 @@ module.exports = function(sequelize, DataTypes) {
         { timestamps: false }
     );
 
-    // User.associate = function(models) {
-    //     User.hasMany(models.Todo, {
-    //         onDelete: "cascade"
-    //     });
-    // };
+    User.associate = function(models) {
+        User.hasMany(models.Todo, {
+            onDelete: "cascade"
+        });
+    };
     return User;
 };
