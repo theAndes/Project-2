@@ -8,12 +8,17 @@ function getWeather() {
 function queryApi(position) {
     var lat = position.coords.latitude;
     var long = position.coords.longitude;
+    coordinates = lat + "," + long;
     // eslint-disable-next-line prettier/prettier
-    var queryUrl = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/c862563a11d6e79b149ee1ac7e419121/"+ lat + "," + long;
+    var queryUrl = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/c862563a11d6e79b149ee1ac7e419121/" + lat + "," + long;
     $.ajax({
         url: queryUrl,
         type: "GET"
+<<<<<<< Updated upstream
     }).then(function(response) {
+=======
+    }).then(function (response) {
+>>>>>>> Stashed changes
         var summary = response.daily.data[0].summary;
         var highTemp = Math.round(
             response.daily.data[0].apparentTemperatureHigh
@@ -29,18 +34,31 @@ function queryApi(position) {
             precipType;
         $("#demo").html(
             summary +
-                "<br>" +
-                "High: " +
-                highTemp +
-                "&#176" +
-                "<br>" +
-                "Low: " +
-                lowTemp +
-                "&#176" +
-                "<br>" +
-                precipProb
+            "<br>" +
+            "High: " +
+            highTemp +
+            "&#176" +
+            "<br>" +
+            "Low: " +
+            lowTemp +
+            "&#176" +
+            "<br>" +
+            precipProb
         );
     });
+<<<<<<< Updated upstream
+=======
+
+    let MQ_KEY = "6KiSyVT6eCBOACnPMSNKOBf9BsMiWRaA";
+    $.ajax({
+        url:
+            "http://www.mapquestapi.com/geocoding/v1/reverse?key=" + MQ_KEY + "&location=" + lat + "," + long + "&includeRoadMetadata=true&includeNearestIntersection=true",
+        method: "GET"
+    }).then(function (response) {
+        console.log(response);
+        currentLocation = response.results[0].locations[0].street + ", " + response.results[0].locations[0].adminArea5 + ", " + response.results[0].locations[0].adminArea3
+    });
+>>>>>>> Stashed changes
 }
 
 getWeather();
