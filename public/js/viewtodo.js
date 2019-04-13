@@ -9,7 +9,7 @@ $(document).ready(function() {
     $(document).on("click", ".todo-item", editTodo);
     $(document).on("keyup", ".todo-item", finishEdit);
     $(document).on("blur", ".todo-item", cancelEdit);
-    $(document).on("submit", "#todo-form", insertTodo);
+    $(document).on("click", "#add-todo-button", insertTodo);
 
     // Our initial todos array
     var todos = [];
@@ -119,13 +119,13 @@ $(document).ready(function() {
     function createNewRow(todo) {
         var $newInputRow = $(
             [
-                "<li class='list-group-item todo-item'>",
+                "<li class='todo-item' style='overflow: hidden; padding: 20px 0; border-bottom: 1px solid #eee;'>",
                 "<span>",
                 todo.text,
                 "</span>",
                 "<input type='text' class='edit' style='display: none;'>",
-                "<button class='delete btn btn-danger'>x</button>",
-                "<button class='complete btn btn-primary'>✓</button>",
+                "<button class='delete btn btn-danger' style='margin:1em;'>x</button>",
+                "<button class='complete btn btn-primary' style='margin-right:1em;'>✓</button>",
                 "</li><br>"
             ].join("")
         );
