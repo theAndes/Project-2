@@ -1,21 +1,31 @@
-<!DOCTYPE html>
-<html>
- 
-<head>
-    <title></title>
-</head>
- 
-<body>
-    <form id="signin" name="signin" method="post" action="signin">
-        <label for="email">Email Address</label>
-        <input class="text" name="email" type="text" />
-        <label for="password">Password</label>
-        <input name="password" type="password" />
-        <input class="btn" type="submit" value="Sign In" />
-    </form>
+<div id="bg-image"></div>
+<div class="container rounded signin py-5 bg-light col-lg-8 col-10">
+    <div class="row">
+        <div id="mc-title" class="mx-auto mb-2">Morning Coffee <img id="pot-pic" src="/images/coffee_pot.png"></div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-10">
 
-    <li><a href="/signup" class="nav-link mr-4" id="sign-up">sign up</a></li>
- 
-</body>
- 
-</html>
+            <form id="signin" name="signin" method="post" action="signin">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1"
+                        placeholder="Password" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" value="Sign In">Sign in</button>
+                <a href="/signup" class="btn btn-warning" class="nav-link mr-4" id="sign-up">Sign up</a>
+
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
