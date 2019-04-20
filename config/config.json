@@ -1,8 +1,8 @@
 {
     "development": {
       "username": "root",
-      "password": "theroots",
-      "database": "coffee_db",
+      "password": "#58621Colette",
+      "database": "coffeedb",
       "host": "localhost",
       "dialect": "mysql",
       "operatorsAliases": false
